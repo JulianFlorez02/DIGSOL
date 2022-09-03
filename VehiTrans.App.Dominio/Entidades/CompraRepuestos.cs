@@ -6,7 +6,7 @@ namespace VehiTrans.App.Dominio
     public class CompraRepuestos
     {
         [Key]
-        public int IdCompraRepuestos  { get; set; }
+        public int CompraRepuestosId  { get; set; }
         public int RepuestosIdRepuestos{ get; set; }
         public string Nombre { get; set; }
         public string costo { get; set; }

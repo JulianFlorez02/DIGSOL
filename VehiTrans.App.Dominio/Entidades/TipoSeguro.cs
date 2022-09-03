@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace TransporteCiclo3.App.Dominio
+namespace VehiTrans.App.Dominio
 {
     public class TipoSeguro
     {

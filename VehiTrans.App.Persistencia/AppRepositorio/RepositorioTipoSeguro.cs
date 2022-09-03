@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using TransporteCiclo3.App.Dominio;
+using VehiTrans.App.Dominio;
 
-namespace TransporteCiclo3.App.Persistencia
+namespace VehiTrans.App.Persistencia
 {
     public class RepositorioTipoSeguro : IRepositorioTipoSeguro
     {

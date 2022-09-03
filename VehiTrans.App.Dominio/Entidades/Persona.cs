@@ -1,7 +1,7 @@
 using System;
 namespace VehiTrans.App.Dominio
 {
-    public class Usuario
+    public class Persona
     {
         public int Id { get; set; }
         public string? Documento { get; set; }

@@ -57,7 +57,7 @@ namespace VehiTrans.App.Persistencia
 
         JefeOperaciones IRepositorioJefeOperaciones.UpdateJefeOperaciones(JefeOperaciones jefeOperaciones)
         {
-            var JefeOperacionesEncontrado = _appContext.JefeOperaciones.FirstOrDefault(p => p.Id == jefeOperaciones.Id);
+            var JefeOperacionesEncontrado = _appContext.JefeOperaciones.FirstOrDefault(p => p.JefeOperacionesId == jefeOperaciones.JefeOperacionesId);
             if (JefeOperacionesEncontrado != null)
             {
                 JefeOperacionesEncontrado.Correo = jefeOperaciones.Correo;

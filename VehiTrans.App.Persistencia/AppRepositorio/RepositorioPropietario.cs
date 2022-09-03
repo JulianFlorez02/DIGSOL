@@ -57,7 +57,7 @@ namespace VehiTrans.App.Persistencia
 
         Propietario IRepositorioPropietario.UpdatePropietario(Propietario propietario)
         {
-            var PropietarioEncontrado = _appContext.Propietario.FirstOrDefault(p => p.Id == Propietario.Id);
+            var PropietarioEncontrado = _appContext.Propietario.FirstOrDefault(p => p.PropietarioId == propietario.PropietarioId);
             if (PropietarioEncontrado != null)
             {
                 PropietarioEncontrado.Ciudad = propietario.Ciudad;

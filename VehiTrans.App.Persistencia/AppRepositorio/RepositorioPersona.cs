@@ -57,7 +57,7 @@ namespace VehiTrans.App.Persistencia
 
         Persona IRepositorioPersona.UpdatePersona(Persona persona)
         {
-            var PersonaEncontrado = _appContext.Personas.FirstOrDefault(p => p.Id == Persona.Id);
+            var PersonaEncontrado = _appContext.Personas.FirstOrDefault(p => p.PersonaId == persona.PersonaId);
             if (PersonaEncontrado != null)
             {
                 PersonaEncontrado.Documento = persona.Documento;

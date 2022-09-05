@@ -61,9 +61,12 @@ namespace VehiTrans.App.Persistencia
                 vvehiculoEncontrado.Placa = vvehiculo.Placa;
                 vvehiculoEncontrado.Marca = vvehiculo.Marca;
                 vvehiculoEncontrado.Modelo = vvehiculo.Modelo;
-                vvehiculoEncontrado.UsuarioIdPropietario = vvehiculo.UsuarioIdPropietario;
-                vvehiculoEncontrado.UsuarioIdConductor = vvehiculo.UsuarioIdConductor;
-                vvehiculoEncontrado.UsuarioIdMecanico = vvehiculo.UsuarioIdMecanico;
+                vvehiculoEncontrado.VehiculoTipoId = vvehiculo.VehiculoTipoId;
+                vvehiculoEncontrado.CantidadPasajeros = vvehiculo.CantidadPasajeros;
+                vvehiculoEncontrado.CilindrajeMotor = vvehiculo.CilindrajeMotor;
+                vvehiculoEncontrado.PropietarioId = vvehiculo.PropietarioId;
+                vvehiculoEncontrado.ConductorId = vvehiculo.ConductorId;
+                vvehiculoEncontrado.MecanicoId = vvehiculo.MecanicoId;
 
                 
                 _appContext.SaveChanges();

@@ -16,7 +16,7 @@ namespace VehiTrans.App.Dominio
         public TipoSeguro TipoSeguro { get; set; }
         public int VehiculoId { get; set; }  //* foranea a Vehiculo *//
         //[ForeignKey("VehiculoId")]
-        //public Vehiculo Vehiculo { get; set; }
+        public Vehiculo Vehiculo { get; set; }
 
     }
 }

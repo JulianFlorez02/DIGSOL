@@ -5,48 +5,41 @@
 <h1>Registro del Vehiculo</h1>
 <br>
 <form action="/my-handling-form-page" method="post">
-        <li>
+        <p>
             <label for="placa">Placa:</label>
             <input type="text" id="placa" name="placa">
-        </li>
-        <li>
-            <label for="marca">marca:</label>
+        </p>
+        <p>
+            <label for="marca">Marca:</label>
             <input type="text" id="marca" name="marca">
-        </li>
-            <li>
-            <label for="modelo">modelo:</label>
-            <input type="text" id="modelo" name="modelo">
-        </li>
-            <li>
-            <label for="tipo">tipo: </label>
-            <input type="number" id="tipo" name="tipo">
-        </li>
-            <li>
+        </p>
+            <label for="modelo">Modelo:</label>
+            <input type="number" id="modelo" name="modelo">
+        </p>
+        <p>Tipo:
+            <input type="radio" name="hm" value="h"> Buseta
+            <input type="radio" name="hm" value="m"> Microbus
+        </p>
+        <p>
             <label for="CantidadPasajeros">Cantidad de Pasajeros: </label>
             <input type="number" id="CantidadPasajeros" name="CantidadPasajeros">
-        </li>
-        <li>
-            <li>
-            <label for="Cilindraje">Cilindraje: </label>
-            <input type="number" id="Cilindraje" name="Cilindraje">
-        </li>
-        <li>
-            <li>
+        </p>
+        <p>
+            <label for="CilindrajeMotor">Cilindraje del Motor: </label>
+            <input type="number" id="CilindrajeMotor" name="CilindrajeMotor">
+        </p>
+        <p>
             <label for="Motor">Motor: </label>
             <input type="number" id="Motor" name="Motor">
-        </li>
-    <label for="msg">Mensaje:</label>
-    <textarea id="msg" name="user_message"></textarea>
-  </li>
+        </p>
+            <label for="msg">Otros:</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </p>
+        <br>
  
- 
-<p>Sexo:
-    <input type="radio" name="hm" value="h"> Hombre
-    <input type="radio" name="hm" value="m"> Mujer
-  </p>
-<p>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Borrar">
-  </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
 
 </form>

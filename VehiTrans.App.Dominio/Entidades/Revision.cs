@@ -7,7 +7,7 @@ namespace VehiTrans.App.Dominio
 public class Revision
 {
 	public int RevisionId {get;set;}
-	public date Fecha{get;set;}
+	public DateTime Fecha{get;set;}
 	public String NiveldeAceite{get;set;} 
 	public String NivelFrenos{get;set;}
 	public String NiveldeRefrigerante{get;set;}

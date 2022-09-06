@@ -9,6 +9,8 @@ a.navbar-brand[b-bszkes9qxa] {
 
 a[b-bszkes9qxa] {
   color: #0077cc;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .btn-primary[b-bszkes9qxa] {

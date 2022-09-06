@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Belen_Umbria_W8\\.nuget\\packages\\": {}
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MINTIC\\DIGSOL\\VehiTrans.App.Frontend\\VehiTrans.App.Frontend.csproj",
+      "projectUniqueName": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoCiclo3\\VehiTrans.App\\VehiTrans.App.Frontend\\VehiTrans.App.Frontend.csproj",
       "projectName": "VehiTrans.App.Frontend",
-      "projectPath": "C:\\MINTIC\\DIGSOL\\VehiTrans.App.Frontend\\VehiTrans.App.Frontend.csproj",
-      "packagesPath": "C:\\Users\\Belen_Umbria_W8\\.nuget\\packages\\",
-      "outputPath": "C:\\MINTIC\\DIGSOL\\VehiTrans.App.Frontend\\obj\\",
+      "projectPath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoCiclo3\\VehiTrans.App\\VehiTrans.App.Frontend\\VehiTrans.App.Frontend.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoCiclo3\\VehiTrans.App\\VehiTrans.App.Frontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Belen_Umbria_W8\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

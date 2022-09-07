@@ -34,7 +34,7 @@ namespace VehiTrans.App.Persistencia
         void IRepositorioJefeOperaciones.DeleteJefeOperaciones(int idJefeOperaciones)
         {
 
-            var JefeOperacionesEncontrado = _appContext.JefeOperaciones.FirstOrDefault(p => p.Id == idJefeOperaciones);
+            var JefeOperacionesEncontrado = _appContext.JefeOperaciones.FirstOrDefault(p => p.JefeOperacionesId == idJefeOperaciones);
             if (JefeOperacionesEncontrado == null)
                 return;
             _appContext.JefeOperaciones.Remove(JefeOperacionesEncontrado);
@@ -52,7 +52,7 @@ namespace VehiTrans.App.Persistencia
         JefeOperaciones IRepositorioJefeOperaciones.GetJefeOperaciones(int idJefeOperaciones)
         {
 
-            return _appContext.JefeOperaciones.FirstOrDefault(p => p.Id == idJefeOperaciones);
+            return _appContext.JefeOperaciones.FirstOrDefault(p => p.JefeOperacionesId == idJefeOperaciones);
         }
 
         JefeOperaciones IRepositorioJefeOperaciones.UpdateJefeOperaciones(JefeOperaciones jefeOperaciones)

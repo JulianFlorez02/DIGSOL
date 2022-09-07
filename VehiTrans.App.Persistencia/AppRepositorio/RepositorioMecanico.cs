@@ -34,7 +34,7 @@ namespace VehiTrans.App.Persistencia
         void IRepositorioMecanico.DeleteMecanico(int idMecanico)
         {
 
-            var MecanicoEncontrado = _appContext.Mecanicos.FirstOrDefault(p => p.Id == idMecanico);
+            var MecanicoEncontrado = _appContext.Mecanicos.FirstOrDefault(p => p.MecanicoId == idMecanico);
             if (MecanicoEncontrado == null)
                 return;
             _appContext.Mecanicos.Remove(MecanicoEncontrado);
@@ -52,7 +52,7 @@ namespace VehiTrans.App.Persistencia
         Mecanico IRepositorioMecanico.GetMecanico(int idMecanico)
         {
 
-            return _appContext.Mecanicos.FirstOrDefault(p => p.Id == idMecanico);
+            return _appContext.Mecanicos.FirstOrDefault(p => p.MecanicoId == idMecanico);
         }
 
         Mecanico IRepositorioMecanico.UpdateMecanico(Mecanico Mecanico)

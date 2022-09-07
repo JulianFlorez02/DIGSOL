@@ -34,7 +34,7 @@ namespace VehiTrans.App.Persistencia
         void IRepositorioConductor.DeleteConductor(int idConductor)
         {
 
-            var ConductorEncontrado = _appContext.Conductores.FirstOrDefault(p => p.Id == idConductor);
+            var ConductorEncontrado = _appContext.Conductores.FirstOrDefault(p => p.ConductorId == idConductor);
             if (ConductorEncontrado == null)
                 return;
             _appContext.Conductores.Remove(ConductorEncontrado);
@@ -52,7 +52,7 @@ namespace VehiTrans.App.Persistencia
         Conductor IRepositorioConductor.GetConductor(int idConductor)
         {
 
-            return _appContext.Conductores.FirstOrDefault(p => p.Id == idConductor);
+            return _appContext.Conductores.FirstOrDefault(p => p.ConductorId == idConductor);
         }
 
         Conductor IRepositorioConductor.UpdateConductor(Conductor conductor)

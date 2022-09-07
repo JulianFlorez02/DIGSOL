@@ -8,11 +8,11 @@ namespace VehiTrans.App.Persistencia
     public interface IRepositorioComprarRepuestos
     {
 
-        IEnumerable<ComprarRepuestos> GetAllComprarRepuestos();
-        ComprarRepuestos AddComprarRepuestos(ComprarRepuestos ComprarRepuestos);
-        ComprarRepuestos UpdateComprarRepuestos(ComprarRepuestos ComprarRepuestos);
+        IEnumerable<CompraRepuestos> GetAllComprarRepuestos();
+        CompraRepuestos AddComprarRepuestos(CompraRepuestos ComprarRepuestos);
+        CompraRepuestos UpdateComprarRepuestos(CompraRepuestos ComprarRepuestos);
         void DeleteComprarRepuestos(int ComprarRepuestosId);
-        ComprarRepuestos GetComprarRepuestos(int ComprarRepuestosId);
+        CompraRepuestos GetComprarRepuestos(int ComprarRepuestosId);
 
     }
 }

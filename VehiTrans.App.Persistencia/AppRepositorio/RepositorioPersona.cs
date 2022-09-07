@@ -34,7 +34,7 @@ namespace VehiTrans.App.Persistencia
         void IRepositorioPersona.DeletePersona(int idPersona)
         {
 
-            var PersonaEncontrado = _appContext.Personas.FirstOrDefault(p => p.Id == idPersona);
+            var PersonaEncontrado = _appContext.Personas.FirstOrDefault(p => p.PersonaId == idPersona);
             if (PersonaEncontrado == null)
                 return;
             _appContext.Personas.Remove(PersonaEncontrado);
@@ -52,7 +52,7 @@ namespace VehiTrans.App.Persistencia
         Persona IRepositorioPersona.GetPersona(int idPersona)
         {
 
-            return _appContext.Personas.FirstOrDefault(p => p.Id == idPersona);
+            return _appContext.Personas.FirstOrDefault(p => p.PersonaId == idPersona);
         }
 
         Persona IRepositorioPersona.UpdatePersona(Persona persona)

@@ -52,7 +52,7 @@ namespace VehiTrans.App.Persistencia
         Auxiliar IRepositorioAuxiliar.GetAuxiliar(int idAuxiliar)
         {
 
-            return _appContext.Auxiliares.FirstOrDefault(p => p.Id == idAuxiliar);
+            return _appContext.Auxiliares.FirstOrDefault(p => p.AuxiliarId == idAuxiliar);
         }
 
         Auxiliar IRepositorioAuxiliar.UpdateAuxiliar(Auxiliar auxiliar)

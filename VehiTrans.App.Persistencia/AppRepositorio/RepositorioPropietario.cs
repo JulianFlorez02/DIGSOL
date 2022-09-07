@@ -26,7 +26,7 @@ namespace VehiTrans.App.Persistencia
 
         Propietario IRepositorioPropietario.AddPropietario(Propietario propietario)
         {
-            var PropietarioAdicionado = _appContext.Propietario.Add(propietario);
+            var PropietarioAdicionado = _appContext.Propietarios.Add(propietario);
             _appContext.SaveChanges();
             return PropietarioAdicionado.Entity;
         }
@@ -34,10 +34,10 @@ namespace VehiTrans.App.Persistencia
         void IRepositorioPropietario.DeletePropietario(int idPropietario)
         {
 
-            var PropietarioEncontrado = _appContext.Propietario.FirstOrDefault(p => p.Id == idPropietario);
+            var PropietarioEncontrado = _appContext.Propietarios.FirstOrDefault(p => p.PropietarioId == idPropietario);
             if (PropietarioEncontrado == null)
                 return;
-            _appContext.Propietario.Remove(PropietarioEncontrado);
+            _appContext.Propietarios.Remove(PropietarioEncontrado);
             _appContext.SaveChanges();
         }
 
@@ -45,19 +45,19 @@ namespace VehiTrans.App.Persistencia
         IEnumerable<Propietario> IRepositorioPropietario.GetAllPropietario()
         {
 
-            return _appContext.Propietario;
+            return _appContext.Propietarios;
         }
 
 
         Propietario IRepositorioPropietario.GetPropietario(int idPropietario)
         {
 
-            return _appContext.Propietario.FirstOrDefault(p => p.Id == idPropietario);
+            return _appContext.Propietarios.FirstOrDefault(p => p.PropietarioId == idPropietario);
         }
 
         Propietario IRepositorioPropietario.UpdatePropietario(Propietario propietario)
         {
-            var PropietarioEncontrado = _appContext.Propietario.FirstOrDefault(p => p.PropietarioId == propietario.PropietarioId);
+            var PropietarioEncontrado = _appContext.Propietarios.FirstOrDefault(p => p.PropietarioId == propietario.PropietarioId);
             if (PropietarioEncontrado != null)
             {
                 PropietarioEncontrado.Ciudad = propietario.Ciudad;

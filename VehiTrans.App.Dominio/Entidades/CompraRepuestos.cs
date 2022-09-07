@@ -7,13 +7,13 @@ namespace VehiTrans.App.Dominio
     {
         [Key]
         public int CompraRepuestosId  { get; set; }
-        public int RepuestosIdRepuestos{ get; set; }
-        public string Nombre { get; set; }
-        public string costo { get; set; }
-        public int RevisionIdRevision { get; set; }
-        public string Texto { get; set; }
+        public string Valor { get; set; }
         public DateTime FechaCompra { get; set; }
-        public DateTime FechaCambio { get; set; }
-        public string PlacaVehiculo { get; set; }
+        public string Justificacion { get; set; }
+              
+        public int RepuestosId{ get; set; }
+        public Repuestos Repuestos {get;set;}
+        public int RevisionId{get;set;}
+        public Revision revision{get;set;}
     }
 }

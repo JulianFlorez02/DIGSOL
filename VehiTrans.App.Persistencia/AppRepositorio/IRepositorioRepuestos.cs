@@ -9,10 +9,10 @@ namespace VehiTrans.App.Persistencia
     {
 
         IEnumerable<Repuestos> GetAllRepuestos();
-        Seguro AddRepuestos(Repuestos Repuestos);
-        Seguro UpdateRepuestos(Repuestos Repuestos);
+        // Seguro AddRepuestos(Repuestos Repuestos);
+        // Seguro UpdateRepuestos(Repuestos Repuestos);
         void DeleteRepuestos(int Repuestos);
-        Seguro GetRepuestos(int Repuestos);
+        // Seguro GetRepuestos(int Repuestos);
 
     }
 }

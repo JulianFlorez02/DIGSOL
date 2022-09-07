@@ -13,9 +13,17 @@ a[b-bszkes9qxa] {
   text-decoration: none;
 }
 
+
+
 .btn-primary[b-bszkes9qxa] {
   color: #fff;
   background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.btn-primary:hover[b-bszkes9qxa]{
+  color: #fff;
+  background-color: #2898EE;
   border-color: #1861ac;
 }
 

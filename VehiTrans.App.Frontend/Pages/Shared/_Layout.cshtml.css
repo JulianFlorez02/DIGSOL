@@ -13,19 +13,7 @@ a {
   text-decoration: none;
 }
 
-.btn_save{
-	font-size: 12pt;
-	background: #DFD4A6;
-	padding: 10px;
-	color: #8F141B;
-	letter-spacing: 1px;
-	border: 0;
-	cursor: pointer;
-	margin: 15px auto;
-}
-.btn_save:hover{
-	background: #EFEAD3;
-}
+
 
 .btn-primary {
   color: #fff;

@@ -22,12 +22,6 @@ a[b-bszkes9qxa] {
   border-color: #1861ac;
 }
 
-.btn-primary:hover[b-bszkes9qxa]{
-  color: #fff;
-  background-color: #2898EE;
-  border-color: #1861ac;
-}
-
 .nav-pills .nav-link.active[b-bszkes9qxa], .nav-pills .show > .nav-link[b-bszkes9qxa] {
   color: #fff;
   background-color: #1b6ec2;

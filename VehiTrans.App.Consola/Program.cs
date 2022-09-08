@@ -6,36 +6,36 @@ namespace VehiTrans.App.Consola
 {
     class Program
     {
-      /* Referencia a RepositorioUsuario a traves de la interfaz*/
-        private static IRepositorioUsuario _repoUsuario = new RepositorioUsuario(new Persistencia.AppContext());
+      /* Referencia a RepositorioPersona a traves de la interfaz*/
+        private static IRepositorioPersona _repoPersona= new RepositorioPersona(new Persistencia.AppContext());
 
         static void Main(string[] args)
 
         {
             Console.WriteLine("Hello, World!");
-            //AddUsuario();
-            BuscarUsuario(1);
+            AddPersona();
+            //BuscarPersona(1);
         }
-        private static void AddUsuario()
+        private static void AddPersona()
         {
-            var Usuario = new Usuario
+            var Persona = new Persona
             {
                 Documento = "1012932121",
                 Nombre = "Mathias",
                 Apellidos = "Velasco Piña",
-                Correo = "mathias231@gmail.com",
-                Rol = Rol.JefeOperaciones,
+                Telefono = "mathias231@gmail.com",
+                Usuario = "Mathias1012",
                 Contraseña = "Barcelona123",
             };
 
-            _repoUsuario.AddUsuario(Usuario);
+            _repoPersona.AddPersona(Persona);
 
         }
 
-        private static void BuscarUsuario(int idUsuario)
+        private static void BuscarPersona(int idPersona)
         {
-            var Usuario = _repoUsuario.GetUsuario(idUsuario);
-            Console.WriteLine(Usuario.Nombre+" "+Usuario.Apellidos);
+            var Persona = _repoPersona.GetPersona(idPersona);
+            Console.WriteLine(Persona.Nombre+" "+Persona.Apellidos);
         }
 
 

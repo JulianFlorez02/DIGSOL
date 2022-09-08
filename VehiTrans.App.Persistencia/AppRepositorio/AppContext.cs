@@ -24,7 +24,7 @@ namespace VehiTrans.App.Persistencia
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder
-                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = VehiTransData");//Hola
+                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = VehiTrans.Data2");
             }
 
 

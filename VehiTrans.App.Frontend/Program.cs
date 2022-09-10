@@ -1,10 +1,21 @@
-//using HolaWeb.App.Persistencia.AppRepositorios;
+using VehiTrans.App.Persistencia;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-//builder.Services.AddSingleton <IRepositorioPersona, RepositorioPersona>();
+builder.Services.AddSingleton <IRepositorioAuxiliar, RepositorioAuxiliar>();
+builder.Services.AddSingleton <IRepositorioConductor, RepositorioConductor>();
+builder.Services.AddSingleton <IRepositorioJefeOperaciones, RepositorioJefeOperaciones>();
+builder.Services.AddSingleton <IRepositorioMecanico, RepositorioMecanico>();
+builder.Services.AddSingleton <IRepositorioPropietario, RepositorioPropietario>();
+builder.Services.AddSingleton <IRepositorioTipoSeguro, RepositorioTipoSeguro>();
+//builder.Services.AddSingleton <IRepositorioVehiculoTipo, RepositorioVehiculoTipo>();
+builder.Services.AddSingleton <IRepositorioVehiculo, RepositorioVehiculo>();
+builder.Services.AddSingleton <IRepositorioSeguro, RepositorioSeguro>();
+//builder.Services.AddSingleton <IRepositorioRevision, RepositorioRevision>();
+builder.Services.AddSingleton <IRepositorioComprarRepuestos, RepositorioCompraRepuestos>();
+builder.Services.AddSingleton <IRepositorioRepuestos, RepositorioRepuestos>();
 
 var app = builder.Build();
 

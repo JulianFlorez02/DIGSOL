@@ -62,8 +62,8 @@ namespace VehiTrans.App.Persistencia
             {
                 MecanicoEncontrado.Direccion = Mecanico.Direccion;
                 MecanicoEncontrado.NivelEstudio = Mecanico.NivelEstudio;
-                MecanicoEncontrado.PersonaId = Mecanico.PersonaId;
-                MecanicoEncontrado.Persona = Mecanico.Persona;
+                //MecanicoEncontrado.PersonaId = Mecanico.PersonaId;
+                //MecanicoEncontrado.Persona = Mecanico.Persona;
 
                 _appContext.SaveChanges();
 

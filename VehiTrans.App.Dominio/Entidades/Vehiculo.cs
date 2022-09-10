@@ -17,9 +17,9 @@ namespace VehiTrans.App.Dominio
         public int CantidadPasajeros { get; set; }
         public int CilindrajeMotor { get; set; }
         public int PropietarioId { get; set; }
-        public Propietario Propietario { get; set; }
+        //public Propietario Propietario { get; set; }
         public int ConductorId { get; set; }
-        public Conductor Conductor { get; set; }
+        //public Conductor Conductor { get; set; }
         public int MecanicoId { get; set; }
         public Mecanico Mecanico { get; set; }
     }

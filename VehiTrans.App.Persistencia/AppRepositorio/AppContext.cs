@@ -12,6 +12,7 @@ namespace VehiTrans.App.Persistencia
         public DbSet<Mecanico>? Mecanicos {get;set;}
         public DbSet<Propietario>? Propietarios {get;set;}
         public DbSet<TipoSeguro>? Tiposeguros { get; set; }
+        public DbSet<VehiculoTipo>? VehiculoTipos {get;set;}
         public DbSet<Vehiculo>? Vehiculos { get; set; }
         public DbSet<Seguro>? Seguros { get; set; }
         public DbSet<TipoSeguro>? TipoSeguros { get; set; }

@@ -8,6 +8,6 @@ namespace VehiTrans.App.Dominio
         [Key]
         public int TipoSeguroId  { get; set; }
         [MaxLength(30),MinLength(1)]
-        public string Descripcion { get; set; }
+        public string? Descripcion { get; set; }
     }
 }

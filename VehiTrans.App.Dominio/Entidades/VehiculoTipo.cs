@@ -7,7 +7,7 @@ namespace VehiTrans.App.Dominio
     {
         public int VehiculoTipoId  { get; set; }
         [MaxLength(30),MinLength(1)]
-        public string Descripcion { get; set; }
+        public string? Descripcion { get; set; }
         
     }
 }

@@ -7,6 +7,6 @@ namespace VehiTrans.App.Dominio
     {
         [Key]
         public int RepuestosId {get;set; }
-        public string Descripcion { get; set; }
+        public string? Descripcion { get; set; }
     }
 }

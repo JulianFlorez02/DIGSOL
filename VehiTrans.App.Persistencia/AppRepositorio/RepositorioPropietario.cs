@@ -60,10 +60,15 @@ namespace VehiTrans.App.Persistencia
             var PropietarioEncontrado = _appContext.Propietarios.FirstOrDefault(p => p.PropietarioId == propietario.PropietarioId);
             if (PropietarioEncontrado != null)
             {
+                PropietarioEncontrado.Documento = propietario.Documento;
+                PropietarioEncontrado.Nombre = propietario.Nombre;
+                PropietarioEncontrado.Apellidos = propietario.Apellidos;
+                PropietarioEncontrado.Telefono = propietario.Telefono;
+                PropietarioEncontrado.FechaNacimiento = propietario.FechaNacimiento;
+                PropietarioEncontrado.Usuario = propietario.Usuario;
+                PropietarioEncontrado.Contraseña = propietario.Contraseña;
                 PropietarioEncontrado.Ciudad = propietario.Ciudad;
                 PropietarioEncontrado.Correo = propietario.Correo;
-                PropietarioEncontrado.PersonaId = propietario.PersonaId;
-                PropietarioEncontrado.Persona = propietario.Persona;
 
                 _appContext.SaveChanges();
 

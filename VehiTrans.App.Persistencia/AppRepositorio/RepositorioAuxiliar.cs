@@ -60,9 +60,14 @@ namespace VehiTrans.App.Persistencia
             var AuxiliarEncontrado = _appContext.Auxiliares.FirstOrDefault(p => p.AuxiliarId == auxiliar.AuxiliarId);
             if (AuxiliarEncontrado != null)
             {
+                AuxiliarEncontrado.Documento = auxiliar.Documento;
+                AuxiliarEncontrado.Nombre = auxiliar.Nombre;
+                AuxiliarEncontrado.Apellidos = auxiliar.Apellidos;
+                AuxiliarEncontrado.Telefono = auxiliar.Telefono;
+                AuxiliarEncontrado.FechaNacimiento = auxiliar.FechaNacimiento;
+                AuxiliarEncontrado.Usuario = auxiliar.Usuario;
+                AuxiliarEncontrado.Contraseña = auxiliar.Contraseña;
                 AuxiliarEncontrado.Direccion = auxiliar.Direccion;
-                AuxiliarEncontrado.PersonaId = auxiliar.PersonaId;
-                AuxiliarEncontrado.Persona = auxiliar.Persona;
 
                 _appContext.SaveChanges();
 

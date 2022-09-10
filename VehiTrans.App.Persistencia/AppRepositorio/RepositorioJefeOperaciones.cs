@@ -60,10 +60,14 @@ namespace VehiTrans.App.Persistencia
             var JefeOperacionesEncontrado = _appContext.JefeOperaciones.FirstOrDefault(p => p.JefeOperacionesId == jefeOperaciones.JefeOperacionesId);
             if (JefeOperacionesEncontrado != null)
             {
+                JefeOperacionesEncontrado.Documento = jefeOperaciones.Documento;
+                JefeOperacionesEncontrado.Nombre = jefeOperaciones.Nombre;
+                JefeOperacionesEncontrado.Apellidos = jefeOperaciones.Apellidos;
+                JefeOperacionesEncontrado.Telefono = jefeOperaciones.Telefono;
+                JefeOperacionesEncontrado.FechaNacimiento = jefeOperaciones.FechaNacimiento;
+                JefeOperacionesEncontrado.Usuario = jefeOperaciones.Usuario;
+                JefeOperacionesEncontrado.Contraseña = jefeOperaciones.Contraseña;
                 JefeOperacionesEncontrado.Correo = jefeOperaciones.Correo;
-                JefeOperacionesEncontrado.PersonaId = jefeOperaciones.PersonaId;
-                JefeOperacionesEncontrado.Persona = jefeOperaciones.Persona;
-
                 _appContext.SaveChanges();
 
             }

@@ -6,19 +6,19 @@ namespace VehiTrans.App.Consola
 {
     class Program
     {
-      /* Referencia a RepositorioPersona a traves de la interfaz*/
-        private static IRepositorioPersona _repoPersona= new RepositorioPersona(new Persistencia.AppContext());
+      /* Referencia a RepositorioMecanico a traves de la interfaz*/
+        private static IRepositorioMecanico _repoMecanico= new RepositorioMecanico(new Persistencia.AppContext());
 
         static void Main(string[] args)
 
         {
             Console.WriteLine("Hello, World!");
-            AddPersona();
-            //BuscarPersona(1);
+            AddMecanico();
+            //BuscarMecanico(1);
         }
-        private static void AddPersona()
+        private static void AddMecanico()
         {
-            var Persona = new Persona
+            var Mecanico = new Mecanico
             {
                 Documento = "1012932121",
                 Nombre = "Mathias",
@@ -28,14 +28,14 @@ namespace VehiTrans.App.Consola
                 Contraseña = "Barcelona123",
             };
 
-            _repoPersona.AddPersona(Persona);
+            _repoMecanico.AddMecanico(Mecanico);
 
         }
 
-        private static void BuscarPersona(int idPersona)
+        private static void BuscarMecanico(int idMecanico)
         {
-            var Persona = _repoPersona.GetPersona(idPersona);
-            Console.WriteLine(Persona.Nombre+" "+Persona.Apellidos);
+            var Mecanico = _repoMecanico.GetMecanico(idMecanico);
+            Console.WriteLine(Mecanico.Nombre+" "+Mecanico.Apellidos);
         }
 
 

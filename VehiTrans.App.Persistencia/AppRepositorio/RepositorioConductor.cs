@@ -60,11 +60,16 @@ namespace VehiTrans.App.Persistencia
             var ConductorEncontrado = _appContext.Conductores.FirstOrDefault(p => p.ConductorId == conductor.ConductorId);
             if (ConductorEncontrado != null)
             {
+                ConductorEncontrado.Documento = conductor.Documento;
+                ConductorEncontrado.Nombre = conductor.Nombre;
+                ConductorEncontrado.Apellidos = conductor.Apellidos;
+                ConductorEncontrado.Telefono = conductor.Telefono;
+                ConductorEncontrado.FechaNacimiento = conductor.FechaNacimiento;
+                ConductorEncontrado.Usuario = conductor.Usuario;
+                ConductorEncontrado.Contraseña = conductor.Contraseña;
                 ConductorEncontrado.Licencia = conductor.Licencia;
                 ConductorEncontrado.Direccion = conductor.Direccion;
                 ConductorEncontrado.NivelEstudio = conductor.NivelEstudio;
-                ConductorEncontrado.PersonaId = conductor.PersonaId;
-                ConductorEncontrado.Persona = conductor.Persona;
 
                 _appContext.SaveChanges();
 

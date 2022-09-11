@@ -8,6 +8,7 @@ namespace VehiTrans.App.Dominio
     {
         [Key]
         public int SeguroId  { get; set; }
+        [Required,StringLength(50)]
         public string? CodigoSeguro { get; set; }
         public DateTime FechaCompra { get; set; }
         public DateTime FechaVencimiento { get; set; }

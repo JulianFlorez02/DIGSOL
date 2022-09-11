@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nGMPbSfrQ+qxVyO/bsZPKT2a8eW0paRc94JBzKBlIiRLkhK4zfWkETq2djnPRCe7NNu400U/cb4mBA6U+GkImA==",
+  "dgSpecHash": "MrIdSjZKJZD1XA0Q2FITfriUbLZ9ya3XrPDKpU/MV6u9UTnKyVlfx7TKvsDPQPnqG6d+LPTffB/eurJ4LgiuMQ==",
   "success": true,
   "projectFilePath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoCiclo3\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

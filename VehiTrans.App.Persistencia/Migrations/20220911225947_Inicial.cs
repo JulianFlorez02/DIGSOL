@@ -158,9 +158,9 @@ namespace VehiTrans.App.Persistencia.Migrations
                 {
                     VehiculoId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Placa = table.Column<string>(type: "nvarchar(7)", maxLength: 7, nullable: true),
-                    Marca = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
-                    Modelo = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
+                    Placa = table.Column<string>(type: "nvarchar(7)", maxLength: 7, nullable: false),
+                    Marca = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
+                    Modelo = table.Column<int>(type: "int", maxLength: 30, nullable: false),
                     VehiculoTipoId = table.Column<int>(type: "int", nullable: false),
                     CantidadPasajeros = table.Column<int>(type: "int", nullable: false),
                     CilindrajeMotor = table.Column<int>(type: "int", nullable: false),

@@ -24,7 +24,7 @@ namespace VehiTrans.App.Frontend
                
         public IActionResult OnPostDelete(int Id)
         {
-            Console.WriteLine("Borrando web: "+ Id);
+            //Console.WriteLine("Borrando web: "+ Id);
             _repoVehiculo.DeleteVehiculo(Id);
             return RedirectToAction("Get");
         }

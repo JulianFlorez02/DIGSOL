@@ -12,7 +12,7 @@ using VehiTrans.App.Persistencia;
 namespace VehiTrans.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20220910024716_Inicial")]
+    [Migration("20220911225947_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -372,17 +372,19 @@ namespace VehiTrans.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Marca")
+                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
                     b.Property<int>("MecanicoId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Modelo")
+                    b.Property<int>("Modelo")
                         .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasColumnType("int");
 
                     b.Property<string>("Placa")
+                        .IsRequired()
                         .HasMaxLength(7)
                         .HasColumnType("nvarchar(7)");
 

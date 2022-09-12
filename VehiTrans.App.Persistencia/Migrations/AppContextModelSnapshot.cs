@@ -370,17 +370,19 @@ namespace VehiTrans.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Marca")
+                        .IsRequired()
                         .HasMaxLength(30)
                         .HasColumnType("nvarchar(30)");
 
                     b.Property<int>("MecanicoId")
                         .HasColumnType("int");
 
-                    b.Property<string>("Modelo")
+                    b.Property<int>("Modelo")
                         .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasColumnType("int");
 
                     b.Property<string>("Placa")
+                        .IsRequired()
                         .HasMaxLength(7)
                         .HasColumnType("nvarchar(7)");
 

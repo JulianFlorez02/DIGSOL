@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using VehiTrans.App.Dominio;
+using System;
 
 namespace VehiTrans.App.Persistencia
 {
@@ -31,12 +32,14 @@ namespace VehiTrans.App.Persistencia
             return vvehiculoAdicionado.Entity;
         }
 
-        void IRepositorioVehiculo.DeleteVehiculo(int vVehiculoId)
+        void IRepositorioVehiculo.DeleteVehiculo(int vvehiculoId)
         {
 
-            var vvehiculoEncontrado = _appContext.Vehiculos.FirstOrDefault(p => p.VehiculoId == vVehiculoId);
+            var vvehiculoEncontrado = _appContext.Vehiculos.FirstOrDefault(p => p.VehiculoId == vvehiculoId);
+            Console.WriteLine("Borrando: "+vvehiculoId);
             if (vvehiculoEncontrado == null)
                 return;
+            Console.WriteLine("Encontrado: ");
             _appContext.Vehiculos.Remove(vvehiculoEncontrado);
             _appContext.SaveChanges();
         }
@@ -48,9 +51,9 @@ namespace VehiTrans.App.Persistencia
         }
 
 
-        Vehiculo IRepositorioVehiculo.GetVehiculo(int VehiculoId)
+        Vehiculo IRepositorioVehiculo.GetVehiculo(int vvehiculoId)
         {
-            return _appContext.Vehiculos.FirstOrDefault(p => p.VehiculoId == VehiculoId);
+            return _appContext.Vehiculos.FirstOrDefault(p => p.VehiculoId == vvehiculoId);
         }
 
         Vehiculo IRepositorioVehiculo.UpdateVehiculo(Vehiculo vvehiculo)

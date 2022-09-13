@@ -2,44 +2,36 @@
 @model VehiTrans.App.Frontend.VehiculosModel
 @{
 }
-<h1>Registro del Vehiculo</h1>
+<h1>Lista de Vehiculos</h1>
+<a asp-page="./RegVehiculos" class="btn btn-primary">Registrar Vehiculo</a>
 <br>
-<form action="/my-handling-form-page" method="post">
-        <p>
-            <label for="placa">Placa:</label>
-            <input type="text" id="placa" name="placa">
-        </p>
-        <p>
-            <label for="marca">Marca:</label>
-            <input type="text" id="marca" name="marca">
-        </p>
-            <label for="modelo">Modelo:</label>
-            <input type="number" id="modelo" name="modelo">
-        </p>
-        <p>Tipo:
-            <input type="radio" name="hm" value="h"> Buseta
-            <input type="radio" name="hm" value="m"> Microbus
-        </p>
-        <p>
-            <label for="CantidadPasajeros">Cantidad de Pasajeros: </label>
-            <input type="number" id="CantidadPasajeros" name="CantidadPasajeros">
-        </p>
-        <p>
-            <label for="CilindrajeMotor">Cilindraje del Motor: </label>
-            <input type="number" id="CilindrajeMotor" name="CilindrajeMotor">
-        </p>
-        <p>
-            <label for="Motor">Motor: </label>
-            <input type="number" id="Motor" name="Motor">
-        </p>
-            <label for="msg">Otros:</label>
-            <textarea id="msg" name="user_message"></textarea>
-        </p>
-        <br>
- 
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
-        </p>
 
-</form>
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Placa</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Pasajeros</th>
+            <th scope="col">Motor</th>
+        </tr>
+    </thead>
+    @foreach (var vvehiculo in Model.ListaVehiculos)
+    {
+        <tr>
+            <td>@vvehiculo.Placa</td>
+            <td>@vvehiculo.Marca</td>
+            <td>@vvehiculo.Modelo</td>
+            <td>@Model.TipoVehiculoText(vvehiculo.VehiculoTipoId)</td>
+            <td>@vvehiculo.CantidadPasajeros</td>
+            <td>@vvehiculo.CilindrajeMotor</td>
+            <td>
+                <form method="post" asp-page-handler="Delete" asp-route-id="@vvehiculo.VehiculoId">
+                    <button class="btn btn-danger">Borrar</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+

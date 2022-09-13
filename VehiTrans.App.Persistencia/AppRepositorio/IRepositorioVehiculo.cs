@@ -9,10 +9,9 @@ namespace VehiTrans.App.Persistencia
     {
 
         IEnumerable<Vehiculo> GetAllVehiculos();
-        Vehiculo AddVehiculo(Vehiculo VVehiculo);
-        Vehiculo UpdateVehiculo(Vehiculo VVehiculo);
-        void DeleteVehiculo(int VehiculoId);
-        Vehiculo GetVehiculo(int VehiculoId);
-
+        Vehiculo AddVehiculo(Vehiculo vvehiculo);
+        Vehiculo UpdateVehiculo(Vehiculo vvehiculo);
+        void DeleteVehiculo(int vvehiculoId);
+        Vehiculo GetVehiculo(int vvehiculoId);
     }
 }
